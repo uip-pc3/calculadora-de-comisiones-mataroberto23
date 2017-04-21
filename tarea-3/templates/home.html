@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<title>Inicio</title>
+
+<h1>Calculadora de Comisiones</h1>
+
+<form action="." method="POST">
+    <label>Nombre: </label>
+    <input type="text" name="nombre"/>
+    <label>Apellido</label>
+    <input type="text" name="apellido">
+    <label>Venta</label>
+    <input type="number" name="venta">
+    <input type="submit" name="form" value="enviar">
+</form>
+
+{% if error%}
+<div>
+    <h2>{{ error }}</h2>
+</div>
+{% endif %}

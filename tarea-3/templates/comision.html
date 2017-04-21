@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Comision</title>
+
+<h1>Resultado de Calculadora de Comisiones</h1>
+
+<div>
+    <h2>NOMBRE: {{ nombre}}</h2>
+    <h2>APELLIDO: {{ apellido}}</h2>
+    <h2>VENTA: {{ venta}}</h2>
+</div>
+
+{% if comision%}
+<div>
+    <h2>COMISION: {{ comision}}</h2>
+</div>
+{% endif %}
+
+{% if msg%}
+<div>
+    <h2>NOTA: {{ msg }}</h2>
+</div>
+{% endif %}
